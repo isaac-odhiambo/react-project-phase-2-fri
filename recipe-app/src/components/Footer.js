@@ -14,7 +14,7 @@ function Footer() {
           <div className="footer-section">
             <h4>Contact Information</h4>
             <p>Email: info@recipeapp.com</p>
-            <p>Phone: +1 234 567 890</p>
+            <p>Phone: +2547 01 956 902</p>
           </div>
           <div className="footer-section">
             <h4>Follow Us</h4>

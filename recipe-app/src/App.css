@@ -127,14 +127,14 @@ header nav #tasty span {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.recipe-preview {
-  padding: 10px;
-}
-
 .recipe-photo {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+.recipe-preview {
+  padding: 10px;
 }
 
 .recipe-details {
@@ -410,7 +410,7 @@ form button:hover {
   border-radius: 5px;
 }
 
-.contact-form button {
+contact-form button {
   padding: 10px 20px;
   background-color: #2980b9;
   color: white;
@@ -430,8 +430,4 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
-}
-
-footer p {
-  margin: 0;
 }

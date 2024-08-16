@@ -6,7 +6,7 @@ import FeaturedRecipes from "./components/FeaturedRecipes";
 import RecipeSearch from "./components/RecipeSearch";
 import RecipeDetails from "./components/RecipeDetails";
 import ComposeRecipe from "./components/ComposeRecipe";
-import ManageRecipes from "./components/ManageRecipes"; // Ensure ManageRecipes is imported
+import ManageRecipes from "./components/ManageRecipes";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -33,7 +33,6 @@ function App() {
 
   // Handle new recipe addition
   const handleRecipeAdded = (newRecipe) => {
-    setRecipes((prevRecipes) => [...prevRecipes, newRecipe]); // Update all recipes
     setNewRecipes((prevNewRecipes) => [...prevNewRecipes, newRecipe]); // Update new recipes
 
     // Optionally, you might want to also post to server here
@@ -42,6 +41,11 @@ function App() {
     //     headers: { 'Content-Type': 'application/json' },
     //     body: JSON.stringify(newRecipe),
     // });
+  };
+
+  // Handle recipe removal in ManageRecipes
+  const handleRecipeRemoved = (indexToRemove) => {
+    setNewRecipes((prevNewRecipes) => prevNewRecipes.filter((_, index) => index !== indexToRemove));
   };
 
   // Function to handle meal selection
@@ -61,7 +65,7 @@ function App() {
                 <HeroSection />
                 <FeaturedRecipes recipes={recipes} onMealSelect={onMealSelect} />
                 <ComposeRecipe onRecipeAdded={handleRecipeAdded} />
-                <ManageRecipes recipes={newRecipes} />
+                <ManageRecipes recipes={newRecipes} onRemoveRecipe={handleRecipeRemoved} />
                 <RecipeSearch onMealSelect={onMealSelect} />
               </>
             }
