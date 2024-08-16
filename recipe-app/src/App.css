@@ -1,0 +1,437 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav #tasty {
+  font-size: 24px;
+}
+
+header nav #tasty span {
+  color: #e67e22;
+}
+
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heros {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.heros h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.heros p {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.heros-btn {
+  padding: 10px 20px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.heros-btn:hover {
+  background-color: #d35400;
+}
+
+/* Featured Recipes Styles */
+#featured-recipes {
+  padding: 20px;
+  background-color: #ecf0f1;
+}
+
+#featured-recipes h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recipe-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-preview {
+  padding: 10px;
+}
+
+.recipe-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.recipe-details {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+}
+
+.recipe-card h3 {
+  margin-top: 0;
+}
+
+.recipe-card p {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Recipe Search Styles */
+#recipes {
+  padding: 20px;
+}
+
+.meal-wrapper {
+  text-align: center;
+}
+
+.meal-search .title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.meal-search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-control {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-btn:hover {
+  background-color: #2980b9;
+}
+
+.meal-result .title {
+  margin-bottom: 20px;
+}
+
+.meal-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.meal-item img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.meal-item .meal-name h3 {
+  margin-top: 10px;
+}
+
+.recipe-btn {
+  background-color: #e67e22;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.recipe-btn:hover {
+  background-color: #d35400;
+}
+
+/* Recipe Details Styles */
+.meal-details {
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.meal-details img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.meal-details p {
+  margin: 10px 0;
+}
+
+.recipe-title {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.recipe-category {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.recipe-instruct {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.recipe-meal-img img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.recipe-link a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.recipe-close-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.recipe-close-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Compose Recipe Styles */
+#composepg {
+  padding: 20px;
+}
+
+#composepg h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+form button:hover {
+  background-color: #229954;
+}
+
+/* Manage Recipes Styles */
+#manage-recipes {
+  padding: 20px;
+  background-color: #fff;
+}
+
+#manage-recipes h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.manage-recipe-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.manage-recipe-card h3 {
+  margin-top: 0;
+}
+
+.manage-recipe-card p {
+  margin: 10px 0;
+}
+
+/* Contact Form Styles */
+#contact-form {
+  padding: 20px;
+  background-color: #ecf0f1;
+}
+
+#contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-form button:hover {
+  background-color: #1e6f94;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
