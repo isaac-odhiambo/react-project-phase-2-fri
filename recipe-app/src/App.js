@@ -20,7 +20,7 @@ function App() {
     // Fetch recipes from the local server
     const fetchRecipes = async () => {
       try {
-        const response = await fetch('http://localhost:4000/recipes');
+        const response = await fetch('https://phase-2-project-db.vercel.app/recipes');
         const data = await response.json();
         setRecipes(data);
       } catch (error) {
